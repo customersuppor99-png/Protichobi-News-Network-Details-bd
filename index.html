@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>দৈনিক প্রতিচ্ছবি – ডিজিটাল সাংবাদিকতার ভবিষ্যৎ</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Hind Siliguri for beautiful Bengali typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons for ultra-modern look -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            background-color: #0b0f19;
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 25px rgba(16, 185, 129, 0.3);
+            border-color: rgba(16, 185, 129, 0.5);
+        }
+        .gold-glow {
+            box-shadow: 0 0 30px rgba(245, 158, 11, 0.15);
+        }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.2; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(1.1); }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 8s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="text-gray-100 overflow-x-hidden selection:bg-emerald-500 selection:text-white">
+
+    <!-- background futuristic ambient glows -->
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-pulse-slow pointer-events-none"></div>
+    <div class="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-3xl animate-pulse-slow pointer-events-none" style="animation-delay: 2s;"></div>
+    <div class="absolute bottom-1/4 left-1/3 w-80 h-80 bg-amber-500/5 rounded-full blur-3xl animate-pulse-slow pointer-events-none" style="animation-delay: 4s;"></div>
+
+    <!-- top live news ticker -->
+    <div class="bg-gradient-to-r from-emerald-900 via-slate-900 to-blue-900 border-b border-emerald-500/20 py-2.5 text-sm sticky top-0 z-50 backdrop-blur-md bg-opacity-95">
+        <div class="max-w-7xl mx-auto px-4 flex items-center overflow-hidden">
+            <span class="flex items-center gap-1.5 bg-red-600 text-white font-bold px-3 py-0.5 rounded-full text-xs uppercase tracking-wider animate-pulse whitespace-nowrap">
+                <i data-lucide="radio" class="w-3.5 h-3.5"></i> ব্রেকিং নিউজ
+            </span>
+            <div class="ml-4 overflow-hidden relative w-full h-5">
+                <p class="absolute w-full h-full text-emerald-400 font-medium whitespace-nowrap animate-[marquee_25s_linear_infinite] hover:[animation-play-state:paused] cursor-pointer">
+                    🚀 দৈনিক প্রতিচ্ছবি এখন সম্পূর্ণ নতুন রূপে, নতুন প্রযুক্তি ও আন্তর্জাতিক মানের আধুনিক ডিজাইন নিয়ে যাত্রা শুরু করতে যাচ্ছে... 🎖️ সকল প্রতিনিধিদের জন্য নতুন আপডেটেড মিডিয়া কিট প্রস্তুত!
+                </p>
+            </div>
+        </div>
+    </div>
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+
+    <!-- hero section -->
+    <header class="relative max-w-7xl mx-auto px-4 pt-20 pb-16 text-center">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-medium text-sm mb-6 animate-bounce">
+            <i data-lucide="sparkles" class="w-4 h-4"></i> বাংলাদেশের আধুনিকতম ডিজিটাল সংবাদ প্ল্যাটফর্ম
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-white via-slate-200 to-emerald-400 bg-clip-text text-transparent leading-tight">
+            সাংবাদিকতায় প্রযুক্তির <br><span class="text-emerald-500">এক নতুন মহাবিপ্লব</span>
+        </h1>
+        <p class="max-w-3xl mx-auto text-gray-400 text-lg md:text-xl leading-relaxed mb-10">
+            আমাদের প্রতিষ্ঠানের সকল কার্যক্রম, প্রতিনিধি ব্যবস্থাপনা, সংবাদ প্রকাশনা ও ডিজিটাল সিস্টেমকে আরো উন্নত, নিরাপদ ও প্রফেশনাল করার লক্ষ্যে তৈরি করা হয়েছে অত্যাধুনিক নতুন ওয়েবসাইট ও স্মার্ট মিডিয়া প্ল্যাটফর্ম।
+        </p>
+        
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#media-kit" class="px-8 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl transition-all transform hover:-translate-y-1 shadow-lg shadow-emerald-600/20 flex items-center gap-2">
+                <i data-lucide="package" class="w-5 h-5"></i> মিডিয়া কিট দেখুন
+            </a>
+            <a href="#features" class="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold rounded-xl transition-all transform hover:-translate-y-1 border border-slate-700 flex items-center gap-2">
+                <i data-lucide="cpu" class="w-5 h-5"></i> স্মার্ট ফিচারসমূহ
+            </a>
+        </div>
+    </header>
+
+    <!-- live system stats counter -->
+    <section class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-slate-900/50 border border-slate-800 p-5 rounded-2xl text-center backdrop-blur-sm">
+            <div class="text-emerald-400 font-extrabold text-3xl mb-1">১০০+</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider">স্মার্ট ডিজিটাল সুবিধা</div>
+        </div>
+        <div class="bg-slate-900/50 border border-slate-800 p-5 rounded-2xl text-center backdrop-blur-sm">
+            <div class="text-blue-400 font-extrabold text-3xl mb-1">১০০%</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider">নিরাপদ ও ক্লাউড বেসড</div>
+        </div>
+        <div class="bg-slate-900/50 border border-slate-800 p-5 rounded-2xl text-center backdrop-blur-sm">
+            <div class="text-amber-400 font-extrabold text-3xl mb-1">AI</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider">অটোমেটেড পোস্ট সিস্টেম</div>
+        </div>
+        <div class="bg-slate-900/50 border border-slate-800 p-5 rounded-2xl text-center backdrop-blur-sm">
+            <div class="text-purple-400 font-extrabold text-3xl mb-1">QR</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider">স্মার্ট ভেরিফিকেশন</div>
+        </div>
+    </section>
+
+    <!-- media kit section -->
+    <section id="media-kit" class="max-w-7xl mx-auto px-4 py-20 relative">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4 flex items-center justify-center gap-3">
+                <i data-lucide="award" class="text-amber-500 w-8 h-8 md:w-10 md:h-10"></i> প্রতিনিধি সদস্যদের বিশেষ আপডেট
+            </h2>
+            <p class="text-slate-400 max-w-2xl mx-auto">আপনাদের জন্য প্রস্তুত করা হয়েছে দেশের অন্যতম প্রফেশনাল ও আন্তর্জাতিক মানের আধুনিক সাংবাদিকতা উপকরণ বা মিডিয়া কিট।</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- card 1: Smart ID Card -->
+            <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-8 rounded-3xl transition-all duration-300 glow-effect group relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-500/10 rounded-bl-full pointer-events-none transition-all group-hover:bg-emerald-500/20"></div>
+                <div class="p-3 bg-emerald-500/10 rounded-2xl w-fit text-emerald-400 mb-6">
+                    <i data-lucide="qr-code" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 group-hover:text-emerald-400 transition-colors">আন্তর্জাতিক মানের স্মার্ট আইডি কার্ড</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">চায়না থেকে আমদানিকৃত প্রিমিয়াম ও মানসম্মত ম্যাটেরিয়াল দিয়ে তৈরি, যেখানে থাকবে <span class="text-emerald-400">QR Code Verification System</span> এবং উন্নত নিরাপত্তা ব্যবস্থা।</p>
+            </div>
+
+            <!-- card 2: Lanyard -->
+            <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-8 rounded-3xl transition-all duration-300 glow-effect group relative overflow-hidden">
+                <div class="p-3 bg-blue-500/10 rounded-2xl w-fit text-blue-400 mb-6">
+                    <i data-lucide="id-card" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 group-hover:text-blue-400 transition-colors">আকর্ষণীয় প্রিমিয়াম ফিতা (Lanyard)</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">প্রতিষ্ঠানের নিজস্ব ব্র্যান্ডিং এবং বৈশ্বিক মানদণ্ড বজায় রেখে আধুনিক ডিজাইনে প্রস্তুতকৃত অত্যন্ত উন্নত মানের অফিসিয়াল ফিতা।</p>
+            </div>
+
+            <!-- card 3: Pen -->
+            <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-8 rounded-3xl transition-all duration-300 glow-effect group relative overflow-hidden">
+                <div class="p-3 bg-amber-500/10 rounded-2xl w-fit text-amber-400 mb-6">
+                    <i data-lucide="pen-tool" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 group-hover:text-amber-400 transition-colors">সর্বোচ্চ প্রফেশনাল কলম</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">ডকুমেন্টেশনে আভিজাত্য ফুটিয়ে তুলতে থাকছে আমাদের নিজস্ব অফিসিয়াল ব্র্যান্ডিং সমৃদ্ধ প্রিমিয়াম কোয়ালিটির আধুনিক সিগনেচার কলম।</p>
+            </div>
+
+            <!-- card 4: Key Ring & Stickers -->
+            <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-8 rounded-3xl transition-all duration-300 glow-effect group relative overflow-hidden">
+                <div class="p-3 bg-purple-500/10 rounded-2xl w-fit text-purple-400 mb-6">
+                    <i data-lucide="pocket" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 group-hover:text-purple-400 transition-colors">এক্সক্লুসিভ কী-রিং ও স্টিকার</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">বাইক, গাড়ি কিংবা ডিভাইসে ব্যবহারের জন্য প্রতিষ্ঠানের লোগো সংবলিত মেটালিক ফিনিশ আধুনিক ডিজাইনের অফিসিয়াল এক্সেসরিজ।</p>
+            </div>
+
+            <!-- card 5: Premium T-shirt -->
+            <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-amber-500/20 p-8 rounded-3xl transition-all duration-300 gold-glow group relative overflow-hidden md:col-span-2 lg:col-span-2 bg-opacity-40">
+                <div class="absolute top-0 right-0 bg-amber-500 text-slate-950 text-xs font-bold px-4 py-1.5 rounded-bl-xl tracking-wider uppercase animate-pulse">
+                    ইতিহাসের প্রথম
+                </div>
+                <div class="p-3 bg-amber-500/10 rounded-2xl w-fit text-amber-400 mb-6">
+                    <i data-lucide="shirt" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 group-hover:text-amber-400 transition-colors">প্রিমিয়াম সাংবাদিক অফিসিয়াল টি-শার্ট</h3>
+                <p class="text-slate-400 text-sm leading-relaxed max-w-xl">
+                    অত্যন্ত ব্যয়বহুল ও শতভাগ আরামদায়ক উন্নত মানের ফেব্রিক দিয়ে প্রস্তুতকৃত আধুনিক ডিজাইনের অফিসিয়াল টি-শার্ট। যেখানে থাকছে প্রতিষ্ঠানের প্রফেশনাল নিখুঁত ব্র্যান্ডিং এমব্রয়ডারি ও সম্পূর্ণ ইউনিক একটি গর্জিয়াস লুক।
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section id="features" class="bg-slate-950 py-20 border-y border-slate-900 relative">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-wider mb-3">
+                    Next-Gen Ecosystem
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">ওয়েবসাইটের ১০০+ বিশেষ স্মার্ট ফিচার</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">যা একজন আধুনিক সংবাদ প্রতিনিধিকে সম্পূর্ণ ডিজিটাল ও এডভান্সড সাংবাদিকতার এক অভূতপূর্ব অভিজ্ঞতা প্রদান করবে।</p>
+            </div>
+
+            <!-- interactive grid of features -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- feat 1 -->
+                <div class="flex gap-4 p-5 rounded-2xl bg-slate-900/40 border border-slate-800/60 hover:bg-slate-900/80 transition-all">
+                    <div class="text-emerald-400 shrink-0"><i data-lucide="image" class="w-6 h-6"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-200 mb-1">আনলিমিটেড ফটোকার্ড ডিজাইন সিস্টেম</h4>
+                        <p class="text-slate-400 text-xs">কোনো এডিটিং স্কিল ছাড়াই ১ ক্লিকে নিউজ ফটোকার্ড তৈরি করুন।</p>
+                    </div>
+                </div>
+
+                <!-- feat 2 -->
+                <div class="flex gap-4 p-5 rounded-2xl bg-slate-900/40 border border-slate-800/60 hover:bg-slate-900/80 transition-all">
+                    <div class="text-blue-400 shrink-0"><i data-lucide="cpu" class="w-6 h-6"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-200 mb-1">AI ও অটো ফেসবুক পোস্ট জেনারেশন</h4>
+                        <p class="text-slate-400 text-xs">খবর লেখার সাথে সাথে এআই স্বয়ংক্রিয় সোশ্যাল মিডিয়া ক্যাপশন তৈরি করবে।</p>
+                    </div>
+                </div>
+
+                <!-- feat 3 -->
+                <div class="flex gap-4 p-5 rounded-2xl bg-slate-900/40 border border-slate-800/60 hover:bg-slate-900/80 transition-all">
+                    <div class="text-amber-400 shrink-0"><i data-lucide="scan-qr-code" class="w-6 h-6"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-200 mb-1">QR Code সহ অটো প্রেস আইডি জেনারেটর</h4>
+                        <p class="text-slate-400 text-xs">অনলাইনে তাৎক্ষণিক ডিজিটাল আইডি কার্ড ডাউনলোড ও ভেরিফিকেশন সুবিধা।</p>
+                    </div>
+                </div>
+
+                <!-- feat 4 -->
+                <div class="flex gap-4 p-5 rounded-2xl bg-slate-900/40 border border-slate-800/60 hover:bg-slate-900/80 transition-all">
+                    <div class="text-purple-400 shrink-0"><i data-lucide="user-check" class="w-6 h-6"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-200 mb-1">প্রতিনিধি প্রোফাইল ও স্মার্ট একাউন্ট</h4>
+                        <p class="text-slate-400 text-xs">প্রতিটি সাংবাদিকের জন্য ডেডিকেটেড পোর্টফোলিও এবং ড্যাশবোর্ড সিস্টেম।</p>
+                    </div>
+                </div>
+
+                <!-- feat 5 -->
+                <div class="flex gap-4 p-5 rounded-2xl bg-slate-900/40 border border-slate-800/60 hover:bg-slate-900/80 transition-all">
+                    <div class="text-red-400 shrink-0"><i data-lucide="map-pin" class="w-6 h-6"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-200 mb-1">এলাকাভিত্তিক সংবাদ ও প্রতিনিধি ফিল্টার</h4>
+                        <p class="text-slate-400 text-xs">পাঠকরা নির্দিষ্ট বিভাগ বা জেলা সিলেক্ট করে স্থানীয় খবর পড়তে পারবেন।</p>
+                    </div>
+                </div>
+
+                <!-- feat 6 -->
+                <div class="flex gap-4 p-5 rounded-2xl bg-slate-900/40 border border-slate-800/60 hover:bg-slate-900/80 transition-all">
+                    <div class="text-pink-400 shrink-0"><i data-lucide="tv-2" class="w-6 h-6"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-200 mb-1">লাইভ ভিডিও ও IP TV সাপোর্ট</h4>
+                        <p class="text-slate-400 text-xs">সরাসরি গ্রাউন্ড থেকে লাইভ ব্রডকাস্টিং এবং ২৪/৭ আইপি টিভি চালনার প্রযুক্তি।</p>
+                    </div>
+                </div>
+
+                <!-- feat 7 -->
+                <div class="flex gap-4 p-5 rounded-2xl bg-slate-900/40 border border-slate-800/60 hover:bg-slate-900/80 transition-all">
+                    <div class="text-emerald-400 shrink-0"><i data-lucide="bar-chart-3" class="w-6 h-6"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-200 mb-1">অনলাইন ভোটিং ও জরিপ সিস্টেম</h4>
+                        <p class="text-slate-400 text-xs">গুরুত্বপূর্ণ জাতীয় বা স্থানীয় বিষয়ে জনমত যাচাইয়ের রিয়েল-টাইম পোল।</p>
+                    </div>
+                </div>
+
+                <!-- feat 8 -->
+                <div class="flex gap-4 p-5 rounded-2xl bg-slate-900/40 border border-slate-800/60 hover:bg-slate-900/80 transition-all">
+                    <div class="text-indigo-400 shrink-0"><i data-lucide="droplet" class="w-6 h-6"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-200 mb-1">অটোমেটিক ওয়াটারমার্ক সিস্টেম</h4>
+                        <p class="text-slate-400 text-xs">আপলোডকৃত সব ছবিতে স্বয়ংক্রিয়ভাবে কপিরাইট ও লোগো যুক্ত হবে।</p>
+                    </div>
+                </div>
+
+                <!-- feat 9 -->
+                <div class="flex gap-4 p-5 rounded-2xl bg-slate-900/40 border border-slate-800/60 hover:bg-slate-900/80 transition-all">
+                    <div class="text-teal-400 shrink-0"><i data-lucide="shield-check" class="w-6 h-6"></i></div>
+                    <div>
+                        <h4 class="font-bold text-slate-200 mb-1">কন্টেন্ট কপি প্রোটেকশন সিস্টেম</h4>
+                        <p class="text-slate-400 text-xs">অফিসিয়াল অনুমতি ছাড়া কেউ নিউজ কপি বা রাইট ক্লিক করতে পারবে না।</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- small badges for remaining features -->
+            <div class="mt-12 flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+                <span class="bg-slate-900 px-3.5 py-1.5 rounded-xl border border-slate-800 text-xs text-slate-300 font-medium flex items-center gap-1.5"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i> স্মার্ট নিউজ টিকার</span>
+                <span class="bg-slate-900 px-3.5 py-1.5 rounded-xl border border-slate-800 text-xs text-slate-300 font-medium flex items-center gap-1.5"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i> ভিডিও নিউজ পাবলিশিং</span>
+                <span class="bg-slate-900 px-3.5 py-1.5 rounded-xl border border-slate-800 text-xs text-slate-300 font-medium flex items-center gap-1.5"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i> SMS Notification System</span>
+                <span class="bg-slate-900 px-3.5 py-1.5 rounded-xl border border-slate-800 text-xs text-slate-300 font-medium flex items-center gap-1.5"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i> মোবাইল ফ্রেন্ডলি ড্যাশবোর্ড</span>
+                <span class="bg-slate-900 px-3.5 py-1.5 rounded-xl border border-slate-800 text-xs text-slate-300 font-medium flex items-center gap-1.5"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i> SEO & Google AdSense Optimized</span>
+                <span class="bg-slate-900 px-3.5 py-1.5 rounded-xl border border-slate-800 text-xs text-slate-300 font-medium flex items-center gap-1.5"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i> বাংলা ও ইংরেজি অটো নিউজ আপডেট</span>
+                <span class="bg-slate-900 px-3.5 py-1.5 rounded-xl border border-slate-800 text-xs text-slate-300 font-medium flex items-center gap-1.5"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-emerald-400"></i> Facebook Share Branding</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- vision / goal section -->
+    <section class="max-w-5xl mx-auto px-4 py-20 text-center relative">
+        <div class="bg-gradient-to-r from-emerald-950/40 via-slate-900/60 to-blue-950/40 border border-emerald-500/20 p-10 md:p-16 rounded-3xl backdrop-blur-md">
+            <h3 class="text-2xl md:text-4xl font-bold mb-6">আমাদের মূল লক্ষ্য ও ভিশন</h3>
+            <p class="text-slate-300 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+                “দৈনিক প্রতিচ্ছবি” শুধু একটি সাধারণ সংবাদমাধ্যম নয় — এটি বাংলাদেশের ডিজিটাল সাংবাদিকতার ভবিষ্যৎ। আমরা চাই প্রতিটি প্রতিনিধি আধুনিক প্রযুক্তির মাধ্যমে দ্রুত, নিরাপদ ও প্রফেশনাল উপায়ে সংবাদ প্রকাশ করুক। তাই আন্তর্জাতিক মানের প্রযুক্তি, উন্নত নিরাপত্তা ব্যবস্থা এবং স্মার্ট ডিজিটাল মিডিয়া সিস্টেম নিয়ে আমরা এগিয়ে যাচ্ছি নতুন এক ইতিহাস গড়ার লক্ষ্যে।
+            </p>
+        </div>
+    </section>
+
+    <!-- action/instructions banner -->
+    <section class="max-w-7xl mx-auto px-4 pb-24">
+        <div class="bg-gradient-to-br from-slate-900 via-slate-950 to-emerald-950/30 border border-slate-800 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="space-y-4 max-w-2xl">
+                <span class="bg-red-500/10 text-red-400 border border-red-500/20 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full flex items-center gap-1 w-fit">
+                    <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span> গুরুত্বপূর্ণ নির্দেশনা
+                </span>
+                <h3 class="text-2xl md:text-3xl font-bold">আপনার ডকুমেন্ট ও মিডিয়া কিট আজ বুকিং করা হয়েছে</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    প্যাকেজটি হাতে পাওয়ার পর অনুগ্রহ করে দ্রুত সংগ্রহ বা গ্রহণ করবেন। এছাড়াও আজকের মধ্যেই আপনার মোবাইলে <span class="text-emerald-400">SMS এর মাধ্যমে</span> নতুন ওয়েবসাইটের অ্যাকাউন্ট রেজিস্ট্রেশন লিংক পাঠানো হবে। লিংকে প্রবেশ করে আপনার প্রোফাইল সম্পূর্ণ সম্পন্ন করবেন।
+                </p>
+            </div>
+            <div class="shrink-0 w-full md:w-auto">
+                <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl flex items-center gap-4 gold-glow">
+                    <div class="p-3 bg-amber-500/10 text-amber-400 rounded-xl"><i data-lucide="message-square" class="w-6 h-6"></i></div>
+                    <div>
+                        <div class="text-xs text-slate-400">যোগাযোগের মাধ্যম</div>
+                        <div class="text-sm font-bold text-slate-200">মোবাইল SMS চেক করুন</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="border-t border-slate-900 bg-slate-950/80 py-12 text-center text-sm text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <div class="text-lg font-bold text-slate-300 tracking-wide flex items-center justify-center gap-2">
+                <span class="w-2 h-2 bg-emerald-500 rounded-full"></span> দৈনিক প্রতিচ্ছবি পরিবার
+            </div>
+            <p class="text-xs text-slate-600">© 2026 দৈনিক প্রতিচ্ছবি। সর্বস্বত্ব সংরক্ষিত। আন্তর্জাতিক মানের ডিজিটাল প্রেস নেটওয়ার্ক।</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+                                                                                               </html>
